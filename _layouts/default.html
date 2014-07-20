@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrap">
+      {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% if site.env == 'production' %}
+      <link rel="stylesheet" href="/build/style.min.css">
+    {% else %}
+      <link rel="stylesheet" href="/debug/style.css">
+    {% endif %}
+
+    {% if site.env == 'production' %}
+      <script src="/build/main.min.js"></script>
+    {% else %}
+      <script src="/debug/main.js"></script>
+    {% endif %}
+    </body>
+</html>

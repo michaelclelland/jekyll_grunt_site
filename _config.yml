@@ -1,0 +1,28 @@
+# Site settings
+title: Michael Clelland - front end developer
+email: michaeljclelland@gmail.com
+description: "Portfolio site for Michael Clelland, a front end developer in Oslo, Norway. HTML, CSS, Javascript, UX."
+baseurl: ""
+url: "http://michaelclelland.com"
+twitter_username: 
+github_username:  michaelclelland
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: [
+  'node_modules',
+  'bower_components',
+  'Gruntfile.js',
+  'package.json',
+  'bower.json',
+  'requirements.txt',
+  'Gemfile',
+  'Gemfile.lock',
+  'README.md',
+  'css',
+  'less',
+  'js',
+  'env',
+  'tmp'
+]

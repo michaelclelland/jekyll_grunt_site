@@ -1,0 +1,11 @@
+_site
+debug
+build
+assets
+venv
+node_modules
+bower_components
+tmp
+Gemfile.lock
+env/*
+!env/production.sh
